@@ -50,10 +50,16 @@
             div {
                 width: 250px;
                 height: 250px;
+                border-radius: 50%;
                 transition: all .4s ease-in-out;
+                position: relative;
 
                 .text {
                     opacity: 1;
+                    position: absolute;
+                    top: 60%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                 }
 
                 .text2 {
