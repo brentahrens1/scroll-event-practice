@@ -1,21 +1,17 @@
 import { useState } from 'react'
 
 const ScrollingSection: React.FC = () => {
-    const [ scroll1, setScroll1 ] = useState(false)
-    const [ scroll2, setScroll2 ] = useState(false)
+    const [ scroll, setScroll ] = useState('')
 
     const handleScroll = () => {
         if (window.scrollY < 300) {
-            setScroll1(false)
-            setScroll2(false)
+            setScroll('')
         }
 
         if (window.scrollY > 300 && window.scrollY < 600) {
-            setScroll2(false)
-            setScroll1(true)
+            setScroll('scroll1')
         } else if (window.scrollY > 600) {
-            setScroll1(false)
-            setScroll2(true)
+            setScroll('scroll2')
         }
     }
 
@@ -23,9 +19,12 @@ const ScrollingSection: React.FC = () => {
 
     return (
         <div className="scrolling-section">
-            <div className={`scrolling-section__left ${scroll1 ? 'scroll1' : ''} ${scroll2 ? 'scroll2' : ''}`}>
+            <div className={`scrolling-section__left ${scroll}`}>
                 <div className={`one`}>
-                    <div className="text">
+                    <div className="text-number">
+                        1
+                    </div>
+                    <div className="text1">
                         <h2>This is a Header</h2>
                         <strong>Listen up!</strong>
                         <p>This is some content</p>
@@ -35,7 +34,10 @@ const ScrollingSection: React.FC = () => {
                     </div>
                 </div>
                 <div className={`two`}>
-                    <div className="text">
+                    <div className="text-number">
+                        2
+                    </div>
+                    <div className="text1">
                         <h2>This is a Header</h2>
                         <strong>Listen up!</strong>
                         <p>This is some content</p>
@@ -45,7 +47,10 @@ const ScrollingSection: React.FC = () => {
                     </div>
                 </div>
                 <div className={`three`}>
-                    <div className="text">
+                    <div className="text-number">
+                        3
+                    </div>
+                    <div className="text1">
                         <h2>This is a Header</h2>
                         <strong>Listen up!</strong>
                         <p>This is some content</p>
@@ -55,7 +60,10 @@ const ScrollingSection: React.FC = () => {
                     </div>
                 </div>
                 <div className={`four`}>
-                    <div className="text">
+                    <div className="text-number">
+                        4
+                    </div>
+                    <div className="text1">
                         <h2>This is a Header</h2>
                         <strong>Listen up!</strong>
                         <p>This is some content</p>
@@ -65,7 +73,10 @@ const ScrollingSection: React.FC = () => {
                     </div>
                 </div>
                 <div className={`five`}>
-                    <div className="text">
+                    <div className="text-number">
+                        5
+                    </div>
+                    <div className="text1">
                         <h2>This is a Header</h2>
                         <strong>Listen up!</strong>
                         <p>This is some content</p>
@@ -75,7 +86,10 @@ const ScrollingSection: React.FC = () => {
                     </div>
                 </div>
                 <div className={`six`}>
-                    <div className="text">
+                    <div className="text-number">
+                        6
+                    </div>
+                    <div className="text1">
                         <h2>This is a Header</h2>
                         <strong>Listen up!</strong>
                         <p>This is some content</p>

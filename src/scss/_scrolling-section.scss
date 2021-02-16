@@ -14,9 +14,15 @@
             margin-left: 2rem;
             width: 200px;
             height: 2em;
-            transition: all .4s ease-in-out;
+            transition: all .2s ease-in-out;
 
-            .text {
+            .text-number {
+                opacity: 1;
+                text-align: left;
+                color: #fff;
+            }
+
+            .text1 {
                 opacity: 0;
                 color: #fff;
             }
@@ -51,10 +57,10 @@
                 width: 250px;
                 height: 250px;
                 border-radius: 50%;
-                transition: all .4s ease-in-out;
+                transition: all .2s ease-in-out;
                 position: relative;
 
-                .text {
+                .text1 {
                     opacity: 1;
                     position: absolute;
                     top: 60%;
@@ -62,7 +68,7 @@
                     transform: translate(-50%, -50%);
                 }
 
-                .text2 {
+                .text2, .text-number {
                     opacity: 0;
                 }
             }
@@ -92,14 +98,14 @@
             grid-template-columns: repeat(3, 170px);
             grid-template-rows: repeat(3, 1fr);
             grid-gap: 15px;
-            transition: all .4s ease-in-out;
+            transition: all .2s ease-in-out;
 
             div {
                 height: 100%;
                 width: 100%;
                 position: relative;
 
-                .text {
+                .text1, .text-number {
                     opacity: 0;
                 }
 
