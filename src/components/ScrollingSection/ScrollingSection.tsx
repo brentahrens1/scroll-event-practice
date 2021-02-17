@@ -8,9 +8,9 @@ const ScrollingSection: React.FC = () => {
             setScroll('')
         }
 
-        if (window.scrollY > 300 && window.scrollY < 600) {
+        if (window.scrollY > 300 && window.scrollY < 650) {
             setScroll('scroll1')
-        } else if (window.scrollY > 600) {
+        } else if (window.scrollY > 650) {
             setScroll('scroll2')
         }
     }
@@ -22,7 +22,7 @@ const ScrollingSection: React.FC = () => {
             <div className={`scrolling-section__left ${scroll}`}>
                 <div className={`one`}>
                     <div className="text-number">
-                        1
+                        <p>1. The Start</p>
                     </div>
                     <div className="text1">
                         <h2>This is a Header</h2>
@@ -35,7 +35,7 @@ const ScrollingSection: React.FC = () => {
                 </div>
                 <div className={`two`}>
                     <div className="text-number">
-                        2
+                        <p>2. The Grind</p>
                     </div>
                     <div className="text1">
                         <h2>This is a Header</h2>
@@ -48,7 +48,7 @@ const ScrollingSection: React.FC = () => {
                 </div>
                 <div className={`three`}>
                     <div className="text-number">
-                        3
+                        <p>3. The Journey</p>
                     </div>
                     <div className="text1">
                         <h2>This is a Header</h2>
@@ -61,7 +61,7 @@ const ScrollingSection: React.FC = () => {
                 </div>
                 <div className={`four`}>
                     <div className="text-number">
-                        4
+                        <p>4. The Reason</p>
                     </div>
                     <div className="text1">
                         <h2>This is a Header</h2>
@@ -74,7 +74,7 @@ const ScrollingSection: React.FC = () => {
                 </div>
                 <div className={`five`}>
                     <div className="text-number">
-                        5
+                        <p>5. The Mission</p>
                     </div>
                     <div className="text1">
                         <h2>This is a Header</h2>
@@ -87,7 +87,7 @@ const ScrollingSection: React.FC = () => {
                 </div>
                 <div className={`six`}>
                     <div className="text-number">
-                        6
+                        <p>6. The Goal</p>
                     </div>
                     <div className="text1">
                         <h2>This is a Header</h2>
